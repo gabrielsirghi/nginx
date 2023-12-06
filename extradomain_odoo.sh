@@ -1,6 +1,4 @@
 #!/bin/bash
-# Copyright 2023 tensro-analytics
-# v16.0 2023-02-03
 
 # Este script instala nginx y lo configura para trabajar con
 # workers, redireccionando la salida del modulo im_chat que da un error
@@ -10,7 +8,7 @@
 # Default Odoo PORT, change if necessary
 PORT=8069
 
-# WEBSOCKET PORT ODOO V16
+# WEBSOCKET PORT ODOO
 # Remember to add gevent_port = 8072  and proxy_mode = True parameters into odoo.conf
 GEVENT_PORT=8072
 
