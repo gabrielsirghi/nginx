@@ -1,6 +1,4 @@
 #!/bin/bash
-# Copyright 2023 tensor-analytics
-# v16.0 2023-02-03
 
 # Este script instala nginx y lo configura para trabajar con
 # workers, redireccionando la salida del modulo im_chat que da un error
@@ -17,7 +15,7 @@ GEVENT_PORT=8072
 echo "Ingrese el nombre de dominio para el servidor (ejemplo: tensor-analytics.com):"
 read domain
 
-echo "Ingrese un email (ejemplo: info@tensor-analytics.com):"
+echo "Ingrese un email (ejemplo: info@mail.com):"
 read email
 
 echo "************************************************"
@@ -83,7 +81,7 @@ map \$http_upgrade \$connection_upgrade {
   ''      close;
 }
 
-#### Activar esto cuando se use workers unicamente y que sea odoo v15 o menor ######
+#### Activar esto cuando se use workers unicamente ######
 #upstream openerp-im {
 #    server 127.0.0.1:8072 weight=1 fail_timeout=0;
 #}
@@ -163,7 +161,7 @@ echo "***************************************************"
 sudo nginx -t
 
 echo "***************************************************"
-echo "**********Reiniciando servicios...*****************"
+echo "********** Reiniciando servicios...****************"
 echo "***************************************************"
 echo "***************************************************"
 
