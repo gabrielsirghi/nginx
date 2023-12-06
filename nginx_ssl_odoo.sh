@@ -8,7 +8,7 @@
 # Default Odoo PORT, change if necessary
 PORT=8069
 
-# WEBSOCKET PORT ODOO V16
+# WEBSOCKET PORT ODOO
 # Remember to add gevent_port = 8072  and proxy_mode = True parameters into odoo.conf
 GEVENT_PORT=8072
 
